@@ -45,7 +45,7 @@ def main():
     parser = argparse.ArgumentParser(description="Create images with n x n tiles from input images.")
     parser.add_argument('-n', metavar='tileNum', type=int, default=2, help='The n in n x n tiles. Default is 2.')
     parser.add_argument('-aspect' ,metavar=('Height','Width'), nargs=2, type=int, default=(6,4), help='Default ratio is 6:4.')
-    parser.add_argument('-res', metavar='outputRes', type=int, default=2048, help='Output resolution. Default is 2048.')
+    parser.add_argument('-res', metavar='outputRes', type=int, default=2400, help='Output resolution. Default is 2400.')
     
     args = parser.parse_args()
     tile_size = args.n
@@ -121,6 +121,6 @@ def main():
         flushToFile(tile_buffer, target_directory, tile_size, image_counter)
         image_counter = image_counter + 1 
     
-    print("Created " + str(image_counter) + " tiles out of " + str(input_counter) + " images!")
+    print("\nCreated " + str(image_counter) + " tiles out of " + str(input_counter) + " images!")
 
 if __name__ == "__main__": main()
