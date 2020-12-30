@@ -1,6 +1,6 @@
 # TileMaker
 Python script to create tiled images from input images. This script takes all images in the directory it is run from and creates tiled output images in a new /tiles subdirectory from them.
-The output images contain n x x input images, cropped to the deisred aspect ratio. The crop is centered, retaining as much of the original image as possible.
+The output images contain n x n input images, cropped to the deisred aspect ratio. The crop is centered, retaining as much of the original image as possible.
 
 It accepts several command line arguments to customize the output. Call with argument -h to see the this help:
 
