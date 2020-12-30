@@ -19,6 +19,7 @@ optional arguments:
   -o                    Switch off automatic input image rotation.
 ```
 The default settings are for the usecase of compiling images onto 2x2 tiles with 6:4 aspect ratio of a reasonable resolution to print at a photo kiosk for subsequent cutting and produce something like this:
+
 <img src="https://user-images.githubusercontent.com/8363989/103384010-18e47380-4af5-11eb-98db-43cd2c597e91.jpg" width="300">
 (Images sourced from https://unsplash.com/s/photos/vacation)
 
@@ -27,7 +28,8 @@ But this little script can do a lot more. For example you can turn rotation off,
 ```console
 TileMaker.py -a 1 1 -o -n 10 -res 10000
 ```
-With 16 pictures, this will produce something like thisÖ
+With 16 pictures, this will produce something like this:
+
 <img src="https://user-images.githubusercontent.com/8363989/103385355-48e24580-4afa-11eb-9451-50c890e07d3f.jpg" width="300">
 (Images sourced from https://unsplash.com/s/photos/vacation)
 
