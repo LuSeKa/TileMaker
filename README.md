@@ -18,20 +18,24 @@ optional arguments:
   -res outputRes        Pixels in long side of output images. Default is 2400.
   -o                    Switch off automatic input image rotation.
 ```
+
+## Basic usage
 The default settings are for the usecase of compiling images onto 2x2 tiles with 6:4 aspect ratio of a reasonable resolution to print at a photo kiosk for subsequent cutting and produce something like this:
 
 <img src="https://user-images.githubusercontent.com/8363989/103384010-18e47380-4af5-11eb-98db-43cd2c597e91.jpg" width="300">
 (Images sourced from https://unsplash.com/s/photos/vacation)
 
-But this little script can do a lot more. For example you can turn rotation off, set the aspect ratio to 1:1, crank up the resolution and compile your 100 favorite holiday pictures onto a square format for a printed poster gift. The command for this would be something like
+## Advanced usage
+But this little script can do a lot more. For example you can turn rotation off, set the aspect ratio to 1:1, crank up the resolution and compile your 16 favorite holiday pictures onto a square format for a printed poster gift. The command for this would be something like
 
 ```console
 TileMaker.py -a 1 1 -o -n 10 -res 10000
 ```
-With 16 pictures, this will produce something like this:
+and will produce something like this:
 
 <img src="https://user-images.githubusercontent.com/8363989/103385355-48e24580-4afa-11eb-9451-50c890e07d3f.jpg" width="300">
 (Images sourced from https://unsplash.com/s/photos/vacation)
+
 
 # Requirements
 TileMaker relies on OpenCV and Numpy. If you don't have them installed yet you can install them by running
