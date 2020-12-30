@@ -29,7 +29,7 @@ The default settings are for the usecase of compiling images onto 2x2 tiles with
 But this little script can do a lot more. For example you can turn rotation off, set the aspect ratio to 1:1, crank up the resolution and compile your 16 favorite holiday pictures onto a square format for a printed poster gift. The command for this would be something like
 
 ```console
-TileMaker.py -a 1 1 -o -n 10 -res 10000
+TileMaker.py -a 1 1 -o -n 4 -res 10000
 ```
 and will produce something like this:
 
