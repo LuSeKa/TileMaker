@@ -95,7 +95,7 @@ def main():
 
     aspect_ratio = float(aspect_height) / aspect_width
     if aspect_ratio < 1:
-        print("Aspect ration must not be smaller than 1! Exiting.")
+        print("Aspect ratio must not be smaller than 1! Exiting.")
         sys.exit()
     width_pixels = int(height_pixels / aspect_ratio)
 
