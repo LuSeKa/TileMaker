@@ -84,14 +84,14 @@ def main():
     # parse command line arguments
     args = parser.parse_args()
     tile_size = args.n
-
-    args = parser.parse_args()
-    source_directory = os.getcwd()
-    output_directory = "tiles/"
     aspect_height = args.aspect[0]
     aspect_width = args.aspect[1]
     height_pixels = args.res
     align = args.o
+    
+    # fixed parameters
+    source_directory = os.getcwd()
+    output_directory = "tiles/"
 
     aspect_ratio = float(aspect_height) / aspect_width
     if aspect_ratio < 1:
