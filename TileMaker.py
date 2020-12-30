@@ -4,6 +4,7 @@
 import cv2
 import numpy as np
 import os
+import time
 
 ## expected inputs:
 # source directory
@@ -111,8 +112,7 @@ for filename in os.listdir(source_directory):
            # make output path if this is the fist image to create
                 if not os.path.exists(target_directory):
                     os.makedirs(target_directory)
-                    while not os.path.isfile(target_directory):
-                        continue
+                    time.sleep(0.1) 
             cv2.imwrite(target_directory + output_filename,tile_buffer)
             image_counter = image_counter + 1
             cv2.imshow(output_filename, tile_buffer)
@@ -129,8 +129,7 @@ if tile_counter != 0:
     # make output path if this is the fist image to create
     if not os.path.exists(target_directory):
         os.makedirs(target_directory)
-        while not os.path.isfile(target_directory):
-            continue
+        time.sleep(0.1) 
     cv2.imwrite(target_directory + output_filename,tile_buffer)   
     image_counter = image_counter + 1 
     cv2.imshow(output_filename, tile_buffer)
