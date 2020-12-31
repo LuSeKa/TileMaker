@@ -20,7 +20,12 @@ optional arguments:
 ```
 
 ## Basic usage
-The default settings are for the usecase of compiling images onto 2x2 tiles with 6:4 aspect ratio of a reasonable resolution to print at a photo kiosk for subsequent cutting and produce something like this:
+The default settings are for the usecase of compiling images onto 2x2 tiles with 6:4 aspect ratio of a reasonable resolution to print at a photo kiosk for subsequent cutting. Simply, from within the directory that contains your phoots, run 
+
+```console
+$ python3 <path to TileMaker>/TileMaker.py
+```
+and it will create a subidrectory /tiles filled with output images like this:
 
 <img src="https://user-images.githubusercontent.com/8363989/103384010-18e47380-4af5-11eb-98db-43cd2c597e91.jpg" width="500">
 (Images sourced from https://unsplash.com/s/photos/vacation)
@@ -29,7 +34,7 @@ The default settings are for the usecase of compiling images onto 2x2 tiles with
 But this little script can do a lot more. For example you can turn rotation off, set the aspect ratio to 1:1, crank up the resolution and compile your 16 favorite holiday pictures onto a square format for a printed poster gift. The command for this would be something like
 
 ```console
-TileMaker.py -a 1 1 -o -n 4 -res 10000
+$ TileMaker.py -a 1 1 -o -n 4 -res 10000
 ```
 and will produce something like this:
 
